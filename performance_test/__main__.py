@@ -45,10 +45,12 @@ def main(
     requests_number: int,
     provider_name: str,
 ) -> None:
+    # print(config_path, proxies_file, test_time, requests_number, provider_name)
     loader = SourceFileLoader("config", config_path)
     config = types.ModuleType(loader.name)
     loader.exec_module(config)
     basic_config = config.BASIC_CONFIG  # type: ignore
+    # print('basic_config',basic_config)
     mysql_config = basic_config["mysql"]
     target = basic_config["target"]
     proxies = fs.file_to_list(proxies_file)

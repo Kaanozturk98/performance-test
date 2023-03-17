@@ -12,12 +12,14 @@ async def run_test(
     requests_number: int,
     provider_name: str,
 ) -> None:
+    # print('test')
     db_ = db.Msql(**mysql_config)
     await db_.connect_to_db()
     provider_ = provider.Provider(title=provider_name, proxies=proxies)
     request_ = request.Http(db_=db_, provider_=provider_, target=target)
     interval = test_time / requests_number
     start = time.time()
+    print('test123')
     while True:
         asyncio.create_task(request_.request())
         if time.time() - start > test_time:

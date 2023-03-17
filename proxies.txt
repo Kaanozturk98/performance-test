@@ -1,2 +1,1 @@
-http://username:password@0.0.0.0:8000
-http://username:password@0.0.0.1:8000
+http://geonode_KhHdXkvMxl:caa45fbc-3384-4b39-b1e6-fbae2215b5b7@premium-residential.geonode.com:9000

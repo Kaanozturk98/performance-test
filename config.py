@@ -2,10 +2,10 @@ BASIC_CONFIG = {
     'mysql': {
         'host': 'localhost',
         'port': 3306,
-        'db': 'your_database_name',
+        'db': 'proxytest',
         'table': 'performance_test',
-        'user': 'your_username',
-        'password': 'your_password',
+        'user': 'root',
+        'password': 'WapE5GL7Bu',
     },
     "target": "https://www.cloudflare.com/cdn-cgi/trace",
 }
